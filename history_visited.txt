@@ -1,0 +1,2 @@
+https://hcmus.edu.vn/category/dao-tao/dai-hoc/thong-tin-danh-cho-sinh-vien/ //*[@id="middle"]/div[2]/div/div[1]/div/*[<i>]//h2/a https://hcmus.edu.vn/thong-bao-thay-doi-phong-hoc-tai-co-so-2-tu-ngay-02-10-2025/
+https://www.ctda.hcmus.edu.vn/vi/thong-bao/ //*[@id="Content"]/div/div[1]/div/div[1]/div/div/div/div/div[1]/*[<i>]//div[@class="post-title"]//a https://www.ctda.hcmus.edu.vn/vi/2025/09/cttt_thong-bao-ve-viec-su-dung-tai-khoan-hoc-vu-khoa-2025/

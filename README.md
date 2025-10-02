@@ -21,8 +21,9 @@ Phần mềm này có công dụng tự động kiểm tra các thông báo mớ
 - **Kiểm tra truy cập:**  
   - Việc kiểm tra xem người dùng đã truy cập thông báo hay chưa được thực hiện thông qua file database lịch sử (`history`) của trình duyệt.  
   - Đường dẫn tới file này cần được cung cấp trong `history_path.txt`.
-  > [!NOTE]
-  > Xem trận đấu tại **static/upload_video/result.mp4**
+> [!NOTE]
+> - Edge: `C:\Users\<Tên_người_dùng>\AppData\Local\Microsoft\Edge\User Data\<Default/Profile 1/Profile 2/...>\History`
+> - Chrome: `C:\Users\<Tên_người_dùng>\AppData\Local\Google\Chrome\User Data\<Default/Profile 1/Profile 2/...>\History`
 
 - **Cách sử dụng tray icon:**  
   - Do tray icon của file exe không thể kiểm tra định kỳ, bạn có thể thêm shortcut vào thư mục Startup để hệ thống tự động chạy chương trình mỗi khi khởi động máy.
@@ -30,3 +31,4 @@ Phần mềm này có công dụng tự động kiểm tra các thông báo mớ
   - Click chuột phải vào icon để mở menu tùy chọn (ví dụ: mở file cấu hình website theo dõi).
 
   - Bạn có thể thay đổi các file ico để đổi icon của tray icon (16px × 16px).
+

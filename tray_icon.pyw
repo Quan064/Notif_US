@@ -2,15 +2,15 @@ import sys
 import os
 from PyQt5.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 from PyQt5.QtGui import QIcon
-from main import *
+from noti import *
 
 class SystemTrayApp:
     def __init__(self):
         self.app = QApplication(sys.argv)
 
         # Khởi tạo tray icon
-        self.icon_default = QIcon(os.path.join(sys._MEIPASS, 'noti.ico'))
-        self.icon_loading = QIcon(os.path.join(sys._MEIPASS, 'loading.ico'))
+        self.icon_default = QIcon('noti.ico')
+        self.icon_loading = QIcon('loading.ico')
         self.tray = QSystemTrayIcon(self.icon_default, self.app)
         self.tray.setToolTip("Click để check thông báo mới")
 
@@ -35,7 +35,7 @@ class SystemTrayApp:
         self.app.exec_()
 
     def setting(self):
-        txt_path = os.path.join(sys._MEIPASS, "history_visited.txt")
+        txt_path = "history_visited.txt"
         os.startfile(txt_path)
 
     def on_click(self, reason):

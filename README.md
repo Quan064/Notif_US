@@ -22,8 +22,7 @@ Phần mềm này có công dụng tự động kiểm tra các thông báo mớ
   - Việc kiểm tra xem người dùng đã truy cập thông báo hay chưa được thực hiện thông qua file database lịch sử (`history`) của trình duyệt.  
   - Đường dẫn tới file này cần được cung cấp trong `history_path.txt`.
   > [!NOTE]
-  > Edge: `C:\Users\<Tên_người_dùng>\AppData\Local\Microsoft\Edge\User Data\<Default/Profile 1/Profile 2/...>\History`
-  > Chrome: `C:\Users\<Tên_người_dùng>\AppData\Local\Google\Chrome\User Data\<Default/Profile 1/Profile 2/...>\History`
+  > Xem trận đấu tại **static/upload_video/result.mp4**
 
 - **Cách sử dụng tray icon:**  
   - Do tray icon của file exe không thể kiểm tra định kỳ, bạn có thể thêm shortcut vào thư mục Startup để hệ thống tự động chạy chương trình mỗi khi khởi động máy.

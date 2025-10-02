@@ -4,7 +4,8 @@
 
 Phần mềm này có công dụng tự động kiểm tra các thông báo mới từ các trang web được chỉ định và gửi thông báo lên Notification Center của Windows. Điều này giúp người dùng không bỏ lỡ các thông báo quan trọng từ các website mà mình quan tâm.
 > [!WARNING]
-> Phần mềm chỉ hoạt động đối với hệ điều hành window 11
+> - Phần mềm chỉ hoạt động đối với hệ điều hành window 11.
+> - Bạn cần phải cài Python để có thể chạy file pyw.
 
 ## Cách hoạt động
 
@@ -33,5 +34,6 @@ Phần mềm này có công dụng tự động kiểm tra các thông báo mớ
   - Click chuột phải vào icon để mở menu tùy chọn (ví dụ: mở file cấu hình website theo dõi).
 
   - Bạn có thể thay đổi các file ico để đổi icon của tray icon (16px × 16px).
+
 
 

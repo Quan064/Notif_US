@@ -9,6 +9,7 @@ HISTORY_VISITED = "history_visited.txt"
 OMISSION = "omission.txt"
 
 def check_link(web, xpath, last_link):
+    new_last_link = last_link
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True,

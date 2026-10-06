@@ -33,11 +33,12 @@ def check_link(web, xpath, last_link):
                         full_name = page.locator(f'xpath={xpath.replace("<i>", str(index))}').inner_text().strip()
 
                         message = fr'''
+                        Import-Module BurntToast
                         $BlogButton = New-BTButton -Content "Mở trang" -Arguments "{link}"
                         New-BurntToastNotification -Text "{page.title()}", "{full_name}" -Button $BlogButton -AppLogo "{os.path.join(os.path.dirname(__file__), "noti.ico")}"
                         '''
 
-                        subprocess.run(["powershell", "-Command", message])
+                        subprocess.run(["powershell", "-ExecutionPolicy", "Bypass", "-Command", message])
                         index += 1
 
                         with open(OMISSION, mode="a", encoding="utf-8") as f:
@@ -50,9 +51,12 @@ def check_link(web, xpath, last_link):
 
 def check_history():
     with open(HISTORY_PATH, mode="r", encoding="utf-8") as f:
-        history_path = f.read().strip()
+        history_path = f.read().strip().split("\n")
     temp_copy = "history_copy.db"
-    shutil.copy2(history_path, temp_copy)
+    try:
+        shutil.copy2(history_path[0], temp_copy)
+    except:
+        shutil.copy2(history_path[1], temp_copy)
 
     conn = sqlite3.connect(temp_copy)
     cursor = conn.cursor()
@@ -67,10 +71,11 @@ def check_history():
                 if cursor.fetchone(): continue
                 else:
                     message = fr'''
-                    $BlogButton = New-BTButton -Content "Mở trang" -Arguments "{link}"
-                    New-BurntToastNotification -Text "{title}", "{full_name}" -Button $BlogButton -AppLogo "{os.path.join(os.path.dirname(__file__), "noti.ico")}"
+                    Import-Module BurntToast
+                    $BlogButton = New-BTButton -Content "Mở trang" -Arguments '{link}'
+                    New-BurntToastNotification -Text '{title}', '{full_name}' -Button $BlogButton -AppLogo '{os.path.join(os.path.dirname(__file__), "noti.ico")}'
                     '''
-                    subprocess.run(["powershell", "-Command", message])
+                    subprocess.run(["powershell", "-ExecutionPolicy", "Bypass", "-Command", message])
                     new_omission.append([link, title, full_name])
 
     with open(OMISSION, mode="w", encoding="utf-8") as f:
@@ -91,7 +96,8 @@ def main():
                 
         with open(HISTORY_VISITED, mode="w", encoding="utf-8") as f:
             f.write("\n".join(" ".join(i) for i in new_noti))
-    except: pass
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
     main()

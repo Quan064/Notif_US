@@ -4,6 +4,7 @@ import sqlite3
 import subprocess
 import os
 
+
 HISTORY_PATH = "history_path.txt"
 HISTORY_VISITED = "history_visited.txt"
 OMISSION = "omission.txt"

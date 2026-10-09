@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 from PyQt5.QtGui import QIcon
 from noti import *
 
+
 class SystemTrayApp:
     def __init__(self):
         self.app = QApplication(sys.argv)

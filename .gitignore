@@ -1,7 +1,3 @@
-history_path.txt
-history_visited.txt
-omission.txt
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

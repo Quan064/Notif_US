@@ -1,2 +1,0 @@
-https://hcmus.edu.vn/category/dao-tao/dai-hoc/thong-tin-danh-cho-sinh-vien/ //*[@id="middle"]/div[2]/div/div[1]/div/*[<i>]//h2/a https://hcmus.edu.vn/thong-bao-chuong-trinh-fpt-frontier-innovators-2026-vien-quantum-ai-cyber-security-qaci-tap-doan-fpt/
-https://www.ctda.hcmus.edu.vn/vi/thong-bao/ //*[@id="Content"]/div/div[1]/div/div[1]/div/div/div/div/div[1]/*[<i>]//div[@class="post-title"]//a https://www.ctda.hcmus.edu.vn/vi/2026/09/ctda-dssv-chinh-thuc-thuc-hien-de-tai-tot-nghiep-khoa-2022-bao-ve-04-2027/
